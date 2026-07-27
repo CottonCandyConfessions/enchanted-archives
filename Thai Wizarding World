@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Understanding the Thai Wizarding World</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+
+--bg:#f5f1ea;
+--paper:#fcfaf6;
+--text:#2b2723;
+--secondary:#6b655e;
+--border:#ddd4c7;
+--accent:#8b6b47;
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:var(--bg);
+
+font-family:Inter,sans-serif;
+
+color:var(--text);
+
+line-height:1.9;
+
+}
+
+.container{
+
+max-width:820px;
+
+margin:auto;
+
+padding:70px 30px 120px;
+
+}
+
+.back{
+
+text-decoration:none;
+
+color:var(--secondary);
+
+font-size:.9rem;
+
+letter-spacing:.08em;
+
+}
+
+.back:hover{
+
+color:var(--accent);
+
+}
+
+header{
+
+margin:70px 0;
+
+}
+
+.small{
+
+text-transform:uppercase;
+
+letter-spacing:.35em;
+
+font-size:.72rem;
+
+color:var(--secondary);
+
+margin-bottom:22px;
+
+}
+
+h1{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:4rem;
+
+font-weight:600;
+
+line-height:1;
+
+margin-bottom:20px;
+
+}
+
+.subtitle{
+
+color:var(--secondary);
+
+font-size:1rem;
+
+}
+
+article{
+
+font-size:1.08rem;
+
+}
+
+article p{
+
+margin-bottom:1.6rem;
+
+}
+
+h2{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:2.2rem;
+
+font-weight:600;
+
+margin-top:90px;
+
+margin-bottom:25px;
+
+}
+
+h3{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:1.7rem;
+
+font-weight:600;
+
+margin-top:55px;
+
+margin-bottom:15px;
+
+}
+
+blockquote{
+
+margin:70px 0;
+
+padding:35px;
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:2rem;
+
+font-style:italic;
+
+text-align:center;
+
+border-top:1px solid var(--border);
+
+border-bottom:1px solid var(--border);
+
+color:var(--accent);
+
+}
+
+.tags{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:12px;
+
+margin:25px 0 40px;
+
+}
+
+.tag{
+
+padding:8px 18px;
+
+border:1px solid var(--border);
+
+border-radius:100px;
+
+font-size:.9rem;
+
+background:var(--paper);
+
+}
+
+footer{
+
+margin-top:120px;
+
+padding-top:40px;
+
+border-top:1px solid var(--border);
+
+text-align:center;
+
+color:var(--secondary);
+
+font-size:.9rem;
+
+}
+
+@media(max-width:700px){
+
+h1{
+
+font-size:2.8rem;
+
+}
+
+blockquote{
+
+font-size:1.5rem;
+
+padding:25px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a class="back" href="index.html">← Back to Enchanted Archives</a>
+
+<header>
+
+<div class="small">
+
+Historical Essay · Archive I
+
+</div>
+
+<h1>
+
+Understanding the Thai Wizarding World
+
+</h1>
+
+<p class="subtitle">
+
+An introductory essay examining magical citizenship, immortal lineages, and the foundations of Thailand's wizarding society.
+
+</p>
+
+</header>
+
+<article>
+
+<p>For centuries, much of the international magical community has viewed wizardkind through a remarkably simple lens: witches and wizards, Squibs, and Ordinaries. While these classifications remain perfectly acceptable within Britain and much of Europe, they represent only one interpretation of magical society.</p>
+
+<p>The Thai wizarding world has long embraced a broader philosophy—one rooted not in <em>what</em> someone is, but in <em>how</em> magic manifests within them.</p>
+
+<p>Rather than dividing society solely by blood status or magical ability, Thai magical law recognises three peoples who together make up wizardkind: <strong>Mortal Wizards</strong>, <strong>Immortal Wizards</strong>, and <strong>Non-Magical People</strong>. It is a system that has remained largely unchanged since the Kingdom formally codified magical law in the 1500s.</p>
+
+<h2>The Three Peoples</h2>
+
+<h3>Mortal Wizards</h3>
+
+<p>Mortal Wizards are the people most outsiders would immediately recognise. They are humans born with magical ability. They learn wand magic, attend magical schools, become healers, curse-breakers, Aurors, historians, artisans, and ministers.</p>
+
+<p>Their lives mirror those of ordinary humans in nearly every biological sense. They grow. They age. They eventually die.</p>
+
+<p>Like every other wizarding nation, Mortal Wizards may be Pure-blood, Half-blood, or Ordinaries-born. Blood status is determined solely by magical ancestry.</p>
+
+<h3>Immortal Wizards</h3>
+
+<p>Immortal Wizards represent ancient magical lineages whose supernatural magic has become inseparable from their biology. While they possess the same capacity for wand magic as Mortal Wizards, each lineage inherits abilities unique to its magical heritage.</p>
+
+<p>Unlike mortals, they cease ageing upon reaching twenty-one years of age. Most live for millennia. Immortality does not make them invincible—they may still perish through violence, powerful magic, or lineage-specific weaknesses.</p>
+
+<div class="tags">
+
+<div class="tag">Vampires</div>
+
+<div class="tag">Werecats</div>
+
+<div class="tag">Sirens</div>
+
+<div class="tag">Werewolves</div>
+
+<div class="tag">Kitsune</div>
+
+<div class="tag">Weredragons</div>
+
+</div>
+
+<h3>Ordinaries</h3>
+
+<p>Ordinaries, or Non-Magical People, are individuals born without magical ability. Rather than defining them in opposition to wizardkind, Thai magical society simply regards them as another part of humanity—people born without magic.</p>
+
+<h2>Blood Status Is Not Species</h2>
+
+<p>One of the most common misconceptions among visiting European witches and wizards is that immortality somehow replaces blood status. It does not.</p>
+
+<p>Blood status and magical lineage are entirely separate concepts. A family of Pure-blood Vampires has preserved magical ancestry for generations, just as a family of Pure-blood Mortal Wizards has done the same. Both Mortal and Immortal Wizards may be Half-blood or born into non-magical families.</p>
+
+<blockquote>
+
+“Citizenship is determined by one's magical nature—not one's biological lineage.”
+
+</blockquote>
+
+<h2>One Magical Community</h2>
+
+<p>Perhaps the greatest philosophical difference between Thailand and many Western magical governments is the refusal to separate wizardkind according to species. Immortal Wizards are not legally classified as magical creatures. They are recognised as full members of wizarding society.</p>
+
+<p>Mortal and Immortal Wizards live together, work together, govern together, and marry one another. Citizenship is founded upon magical nature, not biological lineage.</p>
+
+<h2>Turning</h2>
+
+<p>Although relationships between Mortal and Immortal Wizards are uncommon, they are neither unusual nor controversial. The greatest obstacle is lifespan.</p>
+
+<p>Some immortal lineages possess the ability to perform <strong>Turning</strong>, an ancient and irreversible magical rite allowing a consenting Mortal Wizard to permanently join an immortal lineage. It remains one of the oldest and most sacred magical ceremonies still practised today.</p>
+
+<h2>Soul Bonds</h2>
+
+<p>Among Immortal Wizards, no magical connection is more revered than the Soul Bond. Unlike marriage, it cannot be created through vows or contracts. Two compatible souls become permanently intertwined, whether through ancient ritual or exceedingly rare spontaneous magic.</p>
+
+<p>It does not compel affection, but it is regarded as the deepest form of devotion.</p>
+
+<p>Soul-bound immortals share a single intertwined life force. They may live for millennia—but when the end finally comes, it comes for both. Neither can outlive the other. In immortal folklore, they are said to possess one soul woven between two hearts, destined to leave the world together.</p>
+
+<h2>A Different View of Magic</h2>
+
+<p>Perhaps what distinguishes the Thai wizarding world most is not its immortals, but its understanding of magic itself.</p>
+
+<p>Magic is seen as a vast family tree with many branches. Some branches bloom for a century. Others flourish for a thousand years. Yet all remain part of the same forest.</p>
+
+<p>In Thailand, the question has never been <em>what</em> someone is. Only whether magic flows through them. Everything else is simply ancestry.</p>
+
+</article>
+
+<footer>
+
+Archive I · Enchanted Archives
+
+</footer>
+
+</div>
+
+</body>
+
+</html>
