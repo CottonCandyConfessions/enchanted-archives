@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Faculty • Mayantraset School of Magic</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:"Inter",sans-serif;
+background:#F8F4EE;
+color:#2B2927;
+line-height:1.8;
+
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+.hero{
+
+padding:120px 8% 90px;
+text-align:center;
+background:linear-gradient(rgba(248,244,238,.93),rgba(248,244,238,.93)),
+url("https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+
+}
+
+.hero h1{
+
+font-family:"Cormorant Garamond",serif;
+font-size:4.4rem;
+font-weight:600;
+margin-bottom:18px;
+color:#2A241F;
+
+}
+
+.hero p{
+
+max-width:760px;
+margin:auto;
+font-size:1.08rem;
+color:#625B55;
+
+}
+
+.content{
+
+width:min(1200px,92%);
+margin:auto;
+padding:90px 0;
+
+}
+
+.section-title{
+
+font-family:"Cormorant Garamond",serif;
+font-size:3rem;
+font-weight:600;
+text-align:center;
+margin-bottom:20px;
+
+}
+
+.section-subtitle{
+
+max-width:840px;
+margin:0 auto 70px;
+text-align:center;
+color:#66615C;
+font-size:1.05rem;
+
+}
+
+.faculty-grid{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:35px;
+
+}
+
+.faculty-card{
+
+background:#FFFDF9;
+border:1px solid #E3DBCF;
+border-radius:22px;
+padding:38px 34px;
+text-align:center;
+transition:.35s ease;
+
+}
+
+.faculty-card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 18px 40px rgba(0,0,0,.08);
+border-color:#C8A97D;
+
+}
+
+.faculty-photo{
+
+width:105px;
+height:105px;
+border-radius:50%;
+object-fit:cover;
+margin:0 auto 24px;
+border:4px solid #F2ECE4;
+
+}
+
+.faculty-card h3{
+
+font-family:"Cormorant Garamond",serif;
+font-size:2rem;
+line-height:1.2;
+margin-bottom:14px;
+
+}
+
+.subject-title{
+
+font-size:.82rem;
+letter-spacing:.18em;
+text-transform:uppercase;
+color:#A07D56;
+margin-bottom:24px;
+
+}
+
+.faculty-info{
+
+margin-top:22px;
+padding-top:22px;
+border-top:1px solid #E7DED3;
+display:grid;
+gap:16px;
+
+}
+
+.info-item{
+
+text-align:left;
+
+}
+
+.label{
+
+display:block;
+font-size:.72rem;
+letter-spacing:.18em;
+text-transform:uppercase;
+color:#A07D56;
+margin-bottom:4px;
+
+}
+
+.value{
+
+display:block;
+font-size:.95rem;
+color:#57524C;
+
+}
+
+.staff-button{
+
+margin-top:80px;
+text-align:center;
+
+}
+
+.staff-button a{
+
+display:inline-block;
+padding:15px 34px;
+border:1px solid #B78E62;
+border-radius:999px;
+transition:.3s;
+
+}
+
+.staff-button a:hover{
+
+background:#B78E62;
+color:white;
+
+}
+
+footer{
+
+padding:80px 8%;
+text-align:center;
+border-top:1px solid #E5DDD2;
+color:#746B63;
+font-size:.95rem;
+
+}
+
+@media(max-width:1050px){
+
+.faculty-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:700px){
+
+.hero h1{
+
+font-size:3.2rem;
+
+}
+
+.faculty-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<h1>Faculty</h1>
+
+<p>
+
+The professors of Mayantraset School of Magic are among the most accomplished magical scholars in Southeast Asia. Drawn from centuries of magical tradition, they have dedicated their lives to advancing magical knowledge while guiding generations of witches and wizards through every stage of their education.
+
+</p>
+
+</section>
+
+<section class="content">
+
+<h2 class="section-title">
+
+Meet the Faculty
+
+</h2>
+
+<p class="section-subtitle">
+
+Every professor at Mayantraset is a master of their discipline. Many have lived for centuries as Immortal Wizards, contributing to magical research, protecting wizarding society, and preserving the ancient traditions of Southeast Asian magic.
+
+</p>
+
+<div class="faculty-grid">
+
+<!-- Professor 1 -->
+
+<article class="faculty-card">
+
+<img src="https://i.pinimg.com/736x/6f/10/9d/6f109d6d4558f27d2a1615084cb9926c.jpg" class="faculty-photo">
+
+<h3>
+
+Professor Nut Thanat Danjesda
+
+</h3>
+
+<div class="subject-title">
+
+Potions &amp; Alchemy
+
+</div>
+
+<div class="faculty-info">
+
+<div class="info-item">
+<span class="label">Age</span>
+<span class="value">222 Years</span>
+</div>
+
+<div class="info-item">
+<span class="label">Born</span>
+<span class="value">1804</span>
+</div>
+
+<div class="info-item">
+<span class="label">Designation</span>
+<span class="value">Immortal Wizard (Vampire)</span>
+</div>
+
+</div>
+
+</article>
+
+<!-- Professor 2 -->
+
+<article class="faculty-card">
+
+<img src="https://i.pinimg.com/736x/94/b2/dd/94b2dda2eec4f59b3d7fdb3e2745844b.jpg" class="faculty-photo">
+
+<h3>
+
+Professor Hong Pichetpong Chiradatesakunvong
+
+</h3>
+
+<div class="subject-title">
+
+Magical Herbology
+
+</div>
+
+<div class="faculty-info">
+
+<div class="info-item">
+<span class="label">Age</span>
+<span class="value">222 Years</span>
+</div>
+
+<div class="info-item">
+<span class="label">Born</span>
+<span class="value">1804</span>
+</div>
+
+<div class="info-item">
+<span class="label">Designation</span>
+<span class="value">Immortal Wizard (Werecat)</span>
+</div>
+
+</div>
+
+</article>
+
+<!-- Professor 3 -->
+
+<article class="faculty-card">
+
+<img src="https://i.pinimg.com/1200x/53/97/99/53979988acaa3b30ae76f068fe18ef9a.jpg" class="faculty-photo">
+
+<h3>
+
+Professor Pond Naravit Lertratkosum
+
+</h3>
+
+<div class="subject-title">
+
+Spellcasting &amp; Magical Theory
+
+</div>
+
+<div class="faculty-info">
+
+<div class="info-item">
+<span class="label">Age</span>
+<span class="value">225 Years</span>
+</div>
+
+<div class="info-item">
+<span class="label">Born</span>
+<span class="value">1801</span>
+</div>
+
+<div class="info-item">
+<span class="label">Designation</span>
+<span class="value">Immortal Wizard (Weredragon)</span>
+</div>
+
+</div>
+
+</article>
+
+  <!-- Professor 4 -->
+
+<article class="faculty-card">
+
+<img src="https://i.pinimg.com/736x/17/e1/1b/17e11b1a8c013cfc1ab442c8ed52a935.jpg" class="faculty-photo" alt="Professor Phuwin Tangsakyuen">
+
+<h3>
+
+Professor Phuwin Tangsakyuen
+
+</h3>
+
+<div class="subject-title">
+
+History of Magic
+
+</div>
+
+<div class="faculty-info">
+
+<div class="info-item">
+<span class="label">Age</span>
+<span class="value">223 Years</span>
+</div>
+
+<div class="info-item">
+<span class="label">Born</span>
+<span class="value">1803</span>
+</div>
+
+<div class="info-item">
+<span class="label">Designation</span>
+<span class="value">Immortal Wizard (Kitsune)</span>
+</div>
+
+</div>
+
+</article>
+
+<!-- Professor 5 -->
+
+<article class="faculty-card">
+
+<img src="https://i.pinimg.com/1200x/f1/62/bd/f162bda48fb2bb6a81e3667adaafa1f0.jpg" class="faculty-photo" alt="Professor William Jakrapatr Kaewpanpong">
+
+<h3>
+
+Professor William Jakrapatr Kaewpanpong
+
+</h3>
+
+<div class="subject-title">
+
+Curse-Breaking &amp; Magical Archaeology
+
+</div>
+
+<div class="faculty-info">
+
+<div class="info-item">
+<span class="label">Age</span>
+<span class="value">123 Years</span>
+</div>
+
+<div class="info-item">
+<span class="label">Born</span>
+<span class="value">1903</span>
+</div>
+
+<div class="info-item">
+<span class="label">Designation</span>
+<span class="value">Immortal Wizard (Werewolf)</span>
+</div>
+
+</div>
+
+</article>
+
+<!-- Professor 6 -->
+
+<article class="faculty-card">
+
+<img src="https://i.pinimg.com/1200x/63/55/95/635595fbd35af15ae604dfe79de1b2d0.jpg" class="faculty-photo" alt="Professor Est Supha Sangaworawong">
+
+<h3>
+
+Professor Est Supha Sangaworawong
+
+</h3>
+
+<div class="subject-title">
+
+Wizarding Law &amp; Ethics
+
+</div>
+
+<div class="faculty-info">
+
+<div class="info-item">
+<span class="label">Age</span>
+<span class="value">170 Years</span>
+</div>
+
+<div class="info-item">
+<span class="label">Born</span>
+<span class="value">1856</span>
+</div>
+
+<div class="info-item">
+<span class="label">Designation</span>
+<span class="value">Immortal Wizard (Siren)</span>
+</div>
+
+</div>
+
+</article>
+
+  <!-- Professor 7 -->
+
+<article class="faculty-card">
+
+<img src="https://i.pinimg.com/736x/a6/68/81/a66881c34082a72916768695ea1e02bc.jpg" class="faculty-photo" alt="Professor Emi Thasorn Klinnium">
+
+<h3>
+
+Professor Emi Thasorn Klinnium
+
+</h3>
+
+<div class="subject-title">
+
+Politics of the Wizarding World
+
+</div>
+
+<div class="faculty-info">
+
+<div class="info-item">
+<span class="label">Age</span>
+<span class="value">200 Years</span>
+</div>
+
+<div class="info-item">
+<span class="label">Born</span>
+<span class="value">1826</span>
+</div>
+
+<div class="info-item">
+<span class="label">Designation</span>
+<span class="value">Immortal Wizard (Werecoyote)</span>
+</div>
+
+</div>
+
+</article>
+
+<!-- Professor 8 -->
+
+<article class="faculty-card">
+
+<img src="https://i.pinimg.com/1200x/86/ce/25/86ce257566d36b6546f25d6b366fa87d.jpg" class="faculty-photo" alt="Professor Bonnie Pattraphus Borattasuwan">
+
+<h3>
+
+Professor Bonnie Pattraphus Borattasuwan
+
+</h3>
+
+<div class="subject-title">
+
+Illusion Magic
+
+</div>
+
+<div class="faculty-info">
+
+<div class="info-item">
+<span class="label">Age</span>
+<span class="value">151 Years</span>
+</div>
+
+<div class="info-item">
+<span class="label">Born</span>
+<span class="value">1875</span>
+</div>
+
+<div class="info-item">
+<span class="label">Designation</span>
+<span class="value">Immortal Wizard (Veela)</span>
+</div>
+
+</div>
+
+</article>
+
+<!-- Professor 9 -->
+
+<article class="faculty-card">
+
+<img src="https://i.pinimg.com/736x/99/6e/f2/996ef202d789a889d10f02ffebaac5bc.jpg" class="faculty-photo" alt="Professor Chari Charisar Oldham">
+
+<h3>
+
+Professor Chari Charisar Oldham
+
+</h3>
+
+<div class="subject-title">
+
+Healing Magic
+
+</div>
+
+<div class="faculty-info">
+
+<div class="info-item">
+<span class="label">Age</span>
+<span class="value">130 Years</span>
+</div>
+
+<div class="info-item">
+<span class="label">Born</span>
+<span class="value">1896</span>
+</div>
+
+<div class="info-item">
+<span class="label">Designation</span>
+<span class="value">Immortal Wizard (Pixie)</span>
+</div>
+
+</div>
+
+</article>
+
+</div>
+
+<div class="staff-button">
+
+<a href="#">
+
+View More Staff →
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+The faculty of Mayantraset School of Magic represents centuries of accumulated magical wisdom, preserving ancient traditions while shaping the future of magical education across Southeast Asia.
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
