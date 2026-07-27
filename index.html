@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -10,17 +11,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
 :root{
 
---bg:#faf8f4;
---text:#1d1d1f;
---secondary:#707070;
---line:#e7e2da;
---accent:#8a6d4f;
+--bg:#F5F1EA;
+--paper:#FCFAF6;
+--text:#2B2723;
+--secondary:#6D675F;
+--accent:#8A6847;
+--border:#D9D2C7;
 
 }
 
@@ -41,23 +43,23 @@ line-height:1.8;
 
 .wrapper{
 
-max-width:920px;
+max-width:1180px;
 margin:auto;
-padding:90px 30px;
+padding:80px 40px;
 
 }
 
 header{
 
 text-align:center;
-margin-bottom:100px;
+margin-bottom:90px;
 
 }
 
-.small{
+.eyebrow{
 
-letter-spacing:.35em;
 text-transform:uppercase;
+letter-spacing:.35em;
 font-size:.72rem;
 color:var(--secondary);
 margin-bottom:24px;
@@ -67,77 +69,75 @@ margin-bottom:24px;
 h1{
 
 font-family:"Cormorant Garamond",serif;
+font-size:4.7rem;
 font-weight:600;
-font-size:4.4rem;
 line-height:1;
-margin-bottom:20px;
+margin-bottom:24px;
 
 }
 
 .subtitle{
 
+max-width:700px;
+margin:auto;
 font-size:1rem;
 color:var(--secondary);
-max-width:620px;
-margin:auto;
 
 }
 
-hr{
+.cards{
 
-margin:90px 0;
-border:none;
-border-top:1px solid var(--line);
-
-}
-
-.section-title{
-
-font-family:"Cormorant Garamond",serif;
-font-size:2.2rem;
-margin-bottom:50px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
 
 }
 
 .card{
 
-padding:40px 0;
-border-top:1px solid var(--line);
+background:var(--paper);
+padding:55px;
+border:1px solid var(--border);
+transition:.35s ease;
 
 }
 
-.card:last-child{
+.card:hover{
 
-border-bottom:1px solid var(--line);
+transform:translateY(-6px);
+
+box-shadow:
+0 20px 45px rgba(0,0,0,.06);
 
 }
 
 .card h2{
 
 font-family:"Cormorant Garamond",serif;
-font-size:2rem;
+font-size:2.3rem;
 font-weight:600;
-margin-bottom:14px;
+line-height:1.2;
+margin-bottom:18px;
 
 }
 
 .card p{
 
-max-width:700px;
 color:var(--secondary);
-margin-bottom:28px;
+margin-bottom:45px;
 
 }
 
 .button{
 
-display:inline-block;
 text-decoration:none;
-color:var(--text);
+color:var(--accent);
 
-font-size:.9rem;
-letter-spacing:.15em;
+font-size:.85rem;
+
 text-transform:uppercase;
+
+letter-spacing:.18em;
 
 transition:.25s;
 
@@ -145,36 +145,43 @@ transition:.25s;
 
 .button:hover{
 
-letter-spacing:.22em;
+letter-spacing:.28em;
 
 }
 
 footer{
 
-margin-top:120px;
+margin-top:100px;
+
+padding-top:35px;
+
+border-top:1px solid var(--border);
+
 text-align:center;
-font-size:.85rem;
+
 color:var(--secondary);
+
+font-size:.9rem;
 
 }
 
-@media(max-width:700px){
+@media(max-width:900px){
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
 
 h1{
 
-font-size:3rem;
+font-size:3.2rem;
 
 }
 
-.section-title{
+.card{
 
-font-size:1.8rem;
-
-}
-
-.card h2{
-
-font-size:1.7rem;
+padding:40px;
 
 }
 
@@ -190,70 +197,65 @@ font-size:1.7rem;
 
 <header>
 
-<div class="small">
-Enchanted Archives
+<div class="eyebrow">
+ENCHANTED ARCHIVES
 </div>
 
 <h1>
-Till Death Do Us…<br>
+Till Death Do Us...<br>
 Oh, Never Mind 🪄
 </h1>
 
 <p class="subtitle">
-The official companion archive featuring worldbuilding, magical history, and reference material from an original Southeast Asian wizarding world.
+The official companion archive featuring worldbuilding, magical history, institutions, and reference material from the wizarding world of Thailand.
 </p>
 
 </header>
 
-<hr>
+<section class="cards">
 
-<section>
-
-<h2 class="section-title">
-Explore the Wizarding World
-</h2>
-
-<div class="card">
+<article class="card">
 
 <h2>
 Mayantraset School of Magic and Mystical Arts
 </h2>
 
 <p>
-Founded in 1521, Mayantraset is Southeast Asia's oldest magical institution. Discover its four Houses, academic curriculum, faculty, traditions, and student life.
+Founded in 1521, Mayantraset is Southeast Asia's oldest magical institution. Discover its four Houses, academic curriculum, distinguished faculty, traditions, and student life.
 </p>
 
-<a href="#" class="button">
-Explore →
+<a class="button" href="#">
+Explore the School →
 </a>
 
-</div>
+</article>
 
-<div class="card">
+<article class="card">
 
 <h2>
 Understanding the Thai Wizarding World
 </h2>
 
 <p>
-A growing collection of essays exploring magical citizenship, immortal lineages, history, governance, traditions, and the foundations of Thailand's wizarding society.
+A growing collection of essays exploring magical citizenship, immortal lineages, magical law, history, traditions, and the foundations of Thailand's wizarding society.
 </p>
 
-<a href="#" class="button">
+<a class="button" href="#">
 Read Articles →
 </a>
 
-</div>
+</article>
 
 </section>
 
 <footer>
 
-Created for <em>Till Death Do Us… Oh, Never Mind 🪄</em>
+Created for <em>Till Death Do Us... Oh, Never Mind 🪄</em>
 
 </footer>
 
 </div>
 
 </body>
+
 </html>
