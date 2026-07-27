@@ -1,43 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enchanted Archives</title>
 
-    <style>
-        body{
-            background:#f5f2ea;
-            font-family:Georgia, serif;
-            text-align:center;
-            padding:80px;
-            color:#3b2c20;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        h1{
-            font-size:52px;
-        }
+<title>Enchanted Archives</title>
 
-        p{
-            font-size:20px;
-            max-width:700px;
-            margin:auto;
-            line-height:1.8;
-        }
-    </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+
+--bg:#faf8f4;
+--text:#1d1d1f;
+--secondary:#707070;
+--line:#e7e2da;
+--accent:#8a6d4f;
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:Inter,sans-serif;
+background:var(--bg);
+color:var(--text);
+line-height:1.8;
+
+}
+
+.wrapper{
+
+max-width:920px;
+margin:auto;
+padding:90px 30px;
+
+}
+
+header{
+
+text-align:center;
+margin-bottom:100px;
+
+}
+
+.small{
+
+letter-spacing:.35em;
+text-transform:uppercase;
+font-size:.72rem;
+color:var(--secondary);
+margin-bottom:24px;
+
+}
+
+h1{
+
+font-family:"Cormorant Garamond",serif;
+font-weight:600;
+font-size:4.4rem;
+line-height:1;
+margin-bottom:20px;
+
+}
+
+.subtitle{
+
+font-size:1rem;
+color:var(--secondary);
+max-width:620px;
+margin:auto;
+
+}
+
+hr{
+
+margin:90px 0;
+border:none;
+border-top:1px solid var(--line);
+
+}
+
+.section-title{
+
+font-family:"Cormorant Garamond",serif;
+font-size:2.2rem;
+margin-bottom:50px;
+
+}
+
+.card{
+
+padding:40px 0;
+border-top:1px solid var(--line);
+
+}
+
+.card:last-child{
+
+border-bottom:1px solid var(--line);
+
+}
+
+.card h2{
+
+font-family:"Cormorant Garamond",serif;
+font-size:2rem;
+font-weight:600;
+margin-bottom:14px;
+
+}
+
+.card p{
+
+max-width:700px;
+color:var(--secondary);
+margin-bottom:28px;
+
+}
+
+.button{
+
+display:inline-block;
+text-decoration:none;
+color:var(--text);
+
+font-size:.9rem;
+letter-spacing:.15em;
+text-transform:uppercase;
+
+transition:.25s;
+
+}
+
+.button:hover{
+
+letter-spacing:.22em;
+
+}
+
+footer{
+
+margin-top:120px;
+text-align:center;
+font-size:.85rem;
+color:var(--secondary);
+
+}
+
+@media(max-width:700px){
+
+h1{
+
+font-size:3rem;
+
+}
+
+.section-title{
+
+font-size:1.8rem;
+
+}
+
+.card h2{
+
+font-size:1.7rem;
+
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<h1>Enchanted Archives</h1>
+<div class="wrapper">
 
-<p>
-Companion archive for <em>Till Death Do Us… Oh, Never Mind 🪄</em>.
+<header>
+
+<div class="small">
+Enchanted Archives
+</div>
+
+<h1>
+Till Death Do Us…<br>
+Oh, Never Mind 🪄
+</h1>
+
+<p class="subtitle">
+The official companion archive featuring worldbuilding, magical history, and reference material from an original Southeast Asian wizarding world.
 </p>
 
+</header>
+
+<hr>
+
+<section>
+
+<h2 class="section-title">
+Explore the Wizarding World
+</h2>
+
+<div class="card">
+
+<h2>
+Mayantraset School of Magic and Mystical Arts
+</h2>
+
 <p>
-The archives are currently under construction.
+Founded in 1521, Mayantraset is Southeast Asia's oldest magical institution. Discover its four Houses, academic curriculum, faculty, traditions, and student life.
 </p>
+
+<a href="#" class="button">
+Explore →
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>
+Understanding the Thai Wizarding World
+</h2>
+
+<p>
+A growing collection of essays exploring magical citizenship, immortal lineages, history, governance, traditions, and the foundations of Thailand's wizarding society.
+</p>
+
+<a href="#" class="button">
+Read Articles →
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+Created for <em>Till Death Do Us… Oh, Never Mind 🪄</em>
+
+</footer>
+
+</div>
 
 </body>
 </html>
