@@ -1,3 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Curriculum | Enchanted Archives</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+background:#F8F5EF;
+color:#2B2926;
+font-family:"Inter",sans-serif;
+line-height:1.85;
+
+}
+
+.container{
+
+width:min(1200px,92%);
+margin:auto;
+padding:70px 0 100px;
+
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+.back{
+
+display:inline-flex;
+align-items:center;
+gap:8px;
+font-size:.9rem;
+letter-spacing:.08em;
+text-transform:uppercase;
+color:#8E6F4A;
+margin-bottom:60px;
+
+}
+
+.back:hover{
+
+color:#5D452B;
+
+}
+
+.hero{
+
+max-width:820px;
+margin:0 auto 110px;
+text-align:center;
+
+}
+
+.eyebrow{
+
+text-transform:uppercase;
+letter-spacing:.28em;
+font-size:.78rem;
+color:#9C7E57;
+margin-bottom:18px;
+
+}
+
+.hero h1{
+
+font-family:"Cormorant Garamond",serif;
+font-size:4.6rem;
+font-weight:600;
+margin-bottom:28px;
+color:#221F1B;
+
+}
+
+.hero p{
+
+font-size:1.05rem;
+color:#68615A;
+
+}
+
+.content{
+
+margin-bottom:110px;
+
+}
+
+.section-title{
+
+font-family:"Cormorant Garamond",serif;
+font-size:3.2rem;
+font-weight:600;
+margin-bottom:10px;
+
+}
+
+.section-subtitle{
+
+font-size:1rem;
+color:#77706A;
+max-width:720px;
+margin-bottom:45px;
+
+}
+
+.course-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+gap:30px;
+
+}
+
+.course{
+
+background:#FFFCF8;
+border:1px solid #E5DED2;
+border-radius:18px;
+padding:34px;
+position:relative;
+transition:.35s ease;
+
+}
+
+.course:hover{
+
+transform:translateY(-8px);
+box-shadow:0 18px 40px rgba(0,0,0,.08);
+border-color:#C8A97D;
+
+}
+
+.course::before{
+
+content:"";
+position:absolute;
+left:0;
+top:0;
+width:5px;
+height:100%;
+background:#B9925D;
+border-radius:18px 0 0 18px;
+
+}
+
+.course h3{
+
+font-family:"Cormorant Garamond",serif;
+font-size:2rem;
+font-weight:600;
+margin-bottom:16px;
+color:#27231F;
+
+}
+
+.course p{
+
+color:#66615C;
+font-size:.98rem;
+
+}
+
+.course small{
+
+display:block;
+margin-top:12px;
+font-size:.75rem;
+letter-spacing:.12em;
+text-transform:uppercase;
+color:#A96C45;
+
+}
+
+.quote{
+
+margin:90px auto;
+max-width:900px;
+padding:45px;
+background:#FCFAF6;
+border-left:4px solid #B38B59;
+
+}
+
+.quote p{
+
+font-family:"Cormorant Garamond",serif;
+font-size:2rem;
+font-style:italic;
+text-align:center;
+line-height:1.5;
+
+}
+
+.timeline{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:35px;
+margin-top:50px;
+
+}
+
+.year{
+
+background:#FFFDF9;
+border:1px solid #E3DBCF;
+border-radius:18px;
+padding:35px;
+
+}
+
+.year h3{
+
+font-family:"Cormorant Garamond",serif;
+font-size:2.2rem;
+margin-bottom:20px;
+
+}
+
+.year ul{
+
+padding-left:22px;
+
+}
+
+.year li{
+
+margin-bottom:14px;
+
+}
+
+footer{
+
+margin-top:120px;
+padding-top:40px;
+border-top:1px solid #DDD3C5;
+text-align:center;
+font-size:.9rem;
+color:#7A736C;
+
+}
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:3.2rem;
+
+}
+
+.timeline{
+
+grid-template-columns:1fr;
+
+}
+
+.course-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
 <div class="container">
 
 <a href="school.html" class="back">
@@ -20,16 +312,23 @@ At Mayantraset, every student follows a comprehensive magical education during t
 
 <section class="content">
 
-<h2>Core Subjects <span>(Years 1–5)</span></h2>
+<h2 class="section-title">
+Core Subjects
+</h2>
+
+<p class="section-subtitle">
+Every student completes the following eight subjects during their first five years, establishing the knowledge and practical experience expected of every graduate of Mayantraset.
+</p>
 
 <div class="course-grid">
-
-<article class="course">
+  <article class="course">
 
 <h3>Spellcasting &amp; Magical Theory</h3>
 
 <p>
-The foundation of magical education, covering wandwork, spell structure, magical principles, and the theory behind successful spellcasting.
+
+The foundation of magical education, covering wandwork, spell structure, magical principles, and the theory behind successful spellcasting. Students learn the mechanics of channeling magical energy, precision in casting, spell construction, and the relationship between intent, focus, and magical power.
+
 </p>
 
 </article>
@@ -39,7 +338,9 @@ The foundation of magical education, covering wandwork, spell structure, magical
 <h3>Defence Against the Dark Arts</h3>
 
 <p>
-Defensive magic, counter-curses, duelling techniques, protective enchantments, and the recognition of Dark Magic.
+
+Defensive magic, counter-curses, duelling techniques, protective enchantments, and the recognition of Dark Magic. Practical instruction emphasizes quick thinking, magical resilience, teamwork, and the responsible use of defensive spells in dangerous situations.
+
 </p>
 
 </article>
@@ -49,7 +350,9 @@ Defensive magic, counter-curses, duelling techniques, protective enchantments, a
 <h3>Potions &amp; Alchemy</h3>
 
 <p>
-Potion brewing, magical ingredients, transmutation, and the fundamental principles of alchemical magic.
+
+Potion brewing, magical ingredients, transmutation, and the fundamental principles of alchemical magic. Students study both traditional potion-making and the theoretical foundations of magical transformation, learning precision, patience, and experimentation.
+
 </p>
 
 </article>
@@ -59,7 +362,9 @@ Potion brewing, magical ingredients, transmutation, and the fundamental principl
 <h3>Magical Herbology</h3>
 
 <p>
-The cultivation, identification, and magical properties of enchanted flora from Thailand and across the wizarding world.
+
+The cultivation, identification, and magical properties of enchanted flora from Thailand and across the wizarding world. Coursework includes greenhouse cultivation, harvesting techniques, medicinal plants, and the role of magical flora in potions and spellcraft.
+
 </p>
 
 </article>
@@ -69,7 +374,9 @@ The cultivation, identification, and magical properties of enchanted flora from 
 <h3>Magical Creatures</h3>
 
 <p>
-The study, care, behaviour, and conservation of magical beasts and spirits.
+
+The study, care, behaviour, and conservation of magical beasts and spirits. Students gain practical experience handling magical creatures while exploring their habitats, magical biology, and cultural significance throughout Asia.
+
 </p>
 
 </article>
@@ -79,7 +386,9 @@ The study, care, behaviour, and conservation of magical beasts and spirits.
 <h3>Ancient Magic &amp; Runes</h3>
 
 <p>
-Ancient magical scripts, runic inscriptions, forgotten enchantments, and historical magical civilizations.
+
+Ancient magical scripts, runic inscriptions, forgotten enchantments, and historical magical civilizations. Students learn to interpret magical symbols, translate ancient texts, and understand the enduring influence of early spellcraft on modern magic.
+
 </p>
 
 </article>
@@ -89,7 +398,9 @@ Ancient magical scripts, runic inscriptions, forgotten enchantments, and histori
 <h3>Divination &amp; Celestial Studies</h3>
 
 <p>
-Prophecy, astrology, magical astronomy, lunar cycles, celestial magic, and divination techniques.
+
+Prophecy, astrology, magical astronomy, lunar cycles, celestial magic, and divination techniques. Lessons explore how the heavens influence magical practice through observation, interpretation, and ritual while encouraging thoughtful analysis rather than blind certainty.
+
 </p>
 
 </article>
@@ -99,7 +410,9 @@ Prophecy, astrology, magical astronomy, lunar cycles, celestial magic, and divin
 <h3>History of Magic</h3>
 
 <p>
-The history of magical societies, international wizarding relations, magical conflicts, and the evolution of magical law.
+
+The history of magical societies, international wizarding relations, magical conflicts, and the evolution of magical law. Particular emphasis is placed on the rich magical heritage of Southeast Asia and the interconnected histories of magical communities throughout the region.
+
 </p>
 
 </article>
@@ -108,24 +421,40 @@ The history of magical societies, international wizarding relations, magical con
 
 </section>
 
+<section class="quote">
+
+<p>
+
+"Magic is not merely learned—it is cultivated through discipline, curiosity, compassion, and a lifelong pursuit of knowledge."
+
+</p>
+
+</section>
+
 <section class="content">
 
-<h2>Advanced Electives <span>(Years 6–7)</span></h2>
+<h2 class="section-title">
 
-<p class="intro">
+Advanced Electives
 
-Students entering their sixth year may choose elective courses based on their interests and intended magical careers.
+</h2>
+
+<p class="section-subtitle">
+
+Beginning in the sixth year, students are encouraged to specialize by selecting advanced courses aligned with their talents, aspirations, and intended magical professions.
 
 </p>
 
 <div class="course-grid">
 
-<article class="course">
+  <article class="course">
 
 <h3>🪷 Sacred Enchantments</h3>
 
 <p>
-Protective charms, talismans, magical wards, blessings, and sacred inscriptions.
+
+Protective charms, talismans, magical wards, blessings, and sacred inscriptions. Students study ancient protective traditions, ceremonial magic, barrier construction, and defensive enchantments used by magical communities throughout Asia.
+
 </p>
 
 </article>
@@ -135,7 +464,9 @@ Protective charms, talismans, magical wards, blessings, and sacred inscriptions.
 <h3>⚗️ Advanced Alchemy</h3>
 
 <p>
-Magical transmutation, magical metallurgy, rare materials, and advanced alchemical theory.
+
+Magical transmutation, magical metallurgy, rare materials, and advanced alchemical theory. Coursework explores the transformation of magical substances, enchanted metals, and the creation of powerful alchemical compounds.
+
 </p>
 
 </article>
@@ -145,7 +476,9 @@ Magical transmutation, magical metallurgy, rare materials, and advanced alchemic
 <h3>🗺 Curse-Breaking &amp; Magical Archaeology</h3>
 
 <p>
-Exploration of ancient temples, forgotten civilizations, cursed ruins, relic recovery, and magical preservation.
+
+Exploration of ancient temples, forgotten civilizations, cursed ruins, relic recovery, and magical preservation. Students learn to identify magical traps, decipher protective enchantments, and safely recover historical artifacts.
+
 </p>
 
 </article>
@@ -155,7 +488,9 @@ Exploration of ancient temples, forgotten civilizations, cursed ruins, relic rec
 <h3>🎭 Illusion Magic</h3>
 
 <p>
-Advanced glamour magic, concealment, deception spells, perception manipulation, and illusion-based enchantments.
+
+Advanced glamour magic, concealment, deception spells, perception manipulation, and illusion-based enchantments. The course examines both practical applications and the ethical responsibilities involved in altering perception.
+
 </p>
 
 </article>
@@ -165,7 +500,9 @@ Advanced glamour magic, concealment, deception spells, perception manipulation, 
 <h3>🌧 Elemental Magic</h3>
 
 <p>
-The relationship between spellcasting and the natural elements, including weather manipulation and elemental affinities.
+
+The relationship between spellcasting and the natural elements, including weather manipulation, elemental affinities, environmental magic, and the balance between magical power and the natural world.
+
 </p>
 
 </article>
@@ -175,7 +512,9 @@ The relationship between spellcasting and the natural elements, including weathe
 <h3>🏺 Magical Artifact Crafting</h3>
 
 <p>
-Designing and enchanting magical tools, relics, enchanted jewelry, talismans, and magical objects.
+
+Designing and enchanting magical tools, relics, enchanted jewelry, talismans, and magical objects. Students combine craftsmanship with advanced enchantments to create durable magical instruments.
+
 </p>
 
 </article>
@@ -185,18 +524,24 @@ Designing and enchanting magical tools, relics, enchanted jewelry, talismans, an
 <h3>🌏 Wizarding Cultures &amp; Languages</h3>
 
 <p>
-Ancient magical languages, regional magical traditions, and the diverse magical cultures found throughout Asia.
+
+Ancient magical languages, regional magical traditions, and the diverse wizarding cultures found throughout Asia. The course emphasizes diplomacy, historical understanding, and cross-cultural magical cooperation.
+
 </p>
 
 </article>
 
 <article class="course">
 
-<h3>🌙 Soul Magic &amp; Magical Bonds <small>(Restricted)</small></h3>
+<h3>🌙 Soul Magic &amp; Magical Bonds</h3>
 
 <p>
-The study of magical oaths, soul bonds, magical contracts, familiar connections, and life-force magic.
+
+The study of magical oaths, familiar bonds, Soul Bonds, magical contracts, and life-force connections.
+
 </p>
+
+<small>Restricted Course</small>
 
 </article>
 
@@ -205,7 +550,9 @@ The study of magical oaths, soul bonds, magical contracts, familiar connections,
 <h3>🐉 Advanced Magizoology</h3>
 
 <p>
-Magical creature conservation, breeding programs, advanced healing, habitat management, and behavioural studies.
+
+Breeding, healing, conservation, habitat management, and advanced behavioural studies of magical creatures beyond the standard curriculum, with extensive practical fieldwork.
+
 </p>
 
 </article>
@@ -215,97 +562,9 @@ Magical creature conservation, breeding programs, advanced healing, habitat mana
 <h3>💎 Crystal &amp; Gem Magic</h3>
 
 <p>
-Magical gemstones, focusing crystals, ley-line amplification, crystal enchantments, and mineral magic.
-</p>
 
-</article>
+Magical gemstones, focusing stones, ley-line amplification, crystal enchantments, and the interaction between minerals and magical energy.
 
-<article class="course">
-
-<h3>🧭 Magical Navigation &amp; Portkey Theory</h3>
-
-<p>
-International magical travel, enchanted maps, apparition theory, magical transportation networks, and Portkey construction.
-</p>
-
-</article>
-
-<article class="course">
-
-<h3>🌿 Healing Magic</h3>
-
-<p>
-Diagnostic spells, restorative charms, magical anatomy, emergency magical medicine, and potion-assisted healing.
-</p>
-
-</article>
-
-<article class="course">
-
-<h3>⚖️ Wizarding Law &amp; Ethics</h3>
-
-<p>
-International magical legislation, magical rights, Ministry law, ethical spellcasting, and judicial systems.
-</p>
-
-</article>
-
-<article class="course">
-
-<h3>🪞 Mind Magic <small>(Restricted)</small></h3>
-
-<p>
-Occlumency, Legilimency, dream magic, memory charms, mental defense, and psychological spellwork.
-</p>
-
-</article>
-
-<article class="course">
-
-<h3>⭐ Astral Magic</h3>
-
-<p>
-Planetary alignments, lunar rituals, eclipses, magical calendars, constellations, and celestial spellcraft.
-</p>
-
-</article>
-
-<article class="course">
-
-<h3>🖋 Spell Creation &amp; Experimental Magic <small>(Final Year Only)</small></h3>
-
-<p>
-Original spell design, magical research methodology, controlled experimentation, and spell innovation.
-</p>
-
-</article>
-
-<article class="course">
-
-<h3>🏛 Politics of the Wizarding World</h3>
-
-<p>
-International Ministries, magical diplomacy, treaties, political systems, and historical conflicts.
-</p>
-
-</article>
-
-<article class="course">
-
-<h3>🌸 Magical Botany</h3>
-
-<p>
-An advanced continuation of Herbology focusing on extinct magical flora, enchanted ecosystems, and plant-based spellcraft.
-</p>
-
-</article>
-
-<article class="course">
-
-<h3>🕰 Temporal Magic <small>(Theoretical)</small></h3>
-
-<p>
-A theoretical study of Time-Turners, paradoxes, historical magical chronology, and temporal theory. Practical manipulation of time is strictly prohibited.
 </p>
 
 </article>
@@ -316,7 +575,161 @@ A theoretical study of Time-Turners, paradoxes, historical magical chronology, a
 
 <section class="content">
 
-<h2>Academic Structure</h2>
+<h2 class="section-title">
+
+Advanced Electives <span>Continued</span>
+
+</h2>
+
+<p class="section-subtitle">
+
+Senior students continue to broaden their education through highly specialized disciplines, many of which prepare them for professional careers or advanced magical research.
+
+</p>
+
+<div class="course-grid">
+
+  <article class="course">
+
+<h3>🧭 Magical Navigation &amp; Portkey Theory</h3>
+
+<p>
+
+Apparition theory, international magical travel, enchanted maps, magical transportation networks, Portkey construction, and navigation across magical territories. Students study the principles governing safe magical travel while exploring the world's hidden magical routes.
+
+</p>
+
+</article>
+
+<article class="course">
+
+<h3>🌿 Healing Magic</h3>
+
+<p>
+
+Diagnostic spells, restorative charms, magical anatomy, potion-assisted medicine, emergency healing, and the ethical responsibilities of magical healers. Practical instruction emphasizes both precision and compassion.
+
+</p>
+
+</article>
+
+<article class="course">
+
+<h3>⚖️ Wizarding Law &amp; Ethics</h3>
+
+<p>
+
+International magical legislation, Ministry governance, magical rights, courtroom procedure, and the ethical application of magic. Students examine landmark cases and the evolving relationship between law and magical society.
+
+</p>
+
+</article>
+
+<article class="course">
+
+<h3>🪞 Mind Magic</h3>
+
+<p>
+
+Occlumency, Legilimency, dream magic, memory charms, and mental defense. The course explores the complexities of the mind while emphasizing responsible practice and strict ethical safeguards.
+
+</p>
+
+<small>Restricted Course</small>
+
+</article>
+
+<article class="course">
+
+<h3>⭐ Astral Magic</h3>
+
+<p>
+
+Lunar rituals, planetary alignments, eclipses, magical calendars, constellations, and the influence of celestial movements upon magical practice throughout history.
+
+</p>
+
+</article>
+
+<article class="course">
+
+<h3>🖋 Spell Creation &amp; Experimental Magic</h3>
+
+<p>
+
+Designing original spells, magical research methodology, controlled experimentation, spell refinement, and innovation. Students undertake supervised research projects aimed at advancing modern magical knowledge.
+
+</p>
+
+<small>Final-Year Students Only</small>
+
+</article>
+
+<article class="course">
+
+<h3>🏛 Politics of the Wizarding World</h3>
+
+<p>
+
+International magical governments, diplomacy, treaties, magical institutions, historical conflicts, and the political relationships that shape the global wizarding community.
+
+</p>
+
+</article>
+
+<article class="course">
+
+<h3>🌸 Magical Botany</h3>
+
+<p>
+
+An advanced continuation of Herbology focusing on extinct magical flora, enchanted ecosystems, magical conservation, and the application of rare plants within advanced spellcraft and potion-making.
+
+</p>
+
+</article>
+
+<article class="course">
+
+<h3>🕰 Temporal Magic</h3>
+
+<p>
+
+A theoretical course examining Time-Turners, paradoxes, historical magical chronology, and the philosophy of time. Practical manipulation of time remains strictly prohibited under international magical law.
+
+</p>
+
+<small>Theoretical Course</small>
+
+</article>
+
+</div>
+
+</section>
+
+<section class="quote">
+
+<p>
+
+"Knowledge opens the door to magic. Wisdom teaches which doors should remain closed."
+
+</p>
+
+</section>
+
+<section class="content">
+
+<h2 class="section-title">
+
+Academic Structure
+
+</h2>
+
+<p class="section-subtitle">
+
+The curriculum is carefully structured to provide every student with a broad magical foundation before allowing them to pursue specialized fields of study during their final years at Mayantraset.
+
+</p>
 
 <div class="timeline">
 
@@ -328,9 +741,11 @@ A theoretical study of Time-Turners, paradoxes, historical magical chronology, a
 
 <li>Students complete the full core curriculum.</li>
 
-<li>Practical examinations accompany written assessments.</li>
+<li>Every subject combines practical instruction with written theory.</li>
 
-<li>End-of-fifth-year examinations determine eligibility for advanced electives.</li>
+<li>Field expeditions, laboratory work, magical creature studies, and collaborative projects form an essential part of classroom learning.</li>
+
+<li>Comprehensive Fifth-Year Examinations determine eligibility for advanced elective courses.</li>
 
 </ul>
 
@@ -342,11 +757,13 @@ A theoretical study of Time-Turners, paradoxes, historical magical chronology, a
 
 <ul>
 
-<li>Students specialize through advanced elective courses.</li>
+<li>Students build individualized timetables by selecting advanced elective subjects.</li>
 
-<li>Independent magical research becomes a significant component of study.</li>
+<li>Independent magical research becomes a central component of study.</li>
 
-<li>Final-year students complete a supervised magical dissertation or capstone project before graduation.</li>
+<li>Many electives include internships, expeditions, Ministry placements, or specialist apprenticeships.</li>
+
+<li>Before graduation, every seventh-year student completes a supervised magical dissertation or capstone project demonstrating original research or practical magical achievement.</li>
 
 </ul>
 
@@ -356,4 +773,18 @@ A theoretical study of Time-Turners, paradoxes, historical magical chronology, a
 
 </section>
 
+<footer>
+
+<p>
+
+The Curriculum of Mayantraset is designed not merely to teach magic, but to cultivate wisdom, curiosity, integrity, and a lifelong devotion to learning.
+
+</p>
+
+</footer>
+
 </div>
+
+</body>
+
+</html>
